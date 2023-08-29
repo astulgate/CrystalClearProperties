@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.siteheader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  background: navy;
+  color: white;
+}
+
+.siteheader div {
+  padding: 0;
+  margin: 0;
+}
+
+.sitefooter {
+  margin-top: 6rem;
+  padding: 0.1rem;
+  display: flex;
+  justify-content: center;
+  background: navy;
+  color: white;
+}
+
+div {
+  /* display: inline-block; */
+  /* border: 5px dotted red; */
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.test {
+  height: 300px;
+  background: lightblue;
+  display: flex;
+}
+
+.image {
+  height: 75%;
+  /* width: 300px; */
+  background: lightcoral;
+  /* display: inline-block;
+  border: 5px dotted red;
+  margin: 1rem;
+  padding: 1rem; */
+}
+
+.info {
+  height: 75%;
+  /* width: 300px; */
+  background: lightsalmon;
+  /* display: inline-block;
+  border: 5px dotted red;
+  margin: 1rem;
+  padding: 1rem; */
+}
+
+.maincontent {
+  border: 5px dotted green;
+}
+
+.building {
+  border: 5px dotted orange;
+  margin: 10px;
+  /* display: flex; */
+}
+
+.apartment {
+  border: 5px dotted blue;
+  margin: 5px;
+}
