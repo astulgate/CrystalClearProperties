@@ -7,6 +7,10 @@ const buildingList = buildingDataArray.map((building) => {
 
   buildingArticle.innerHTML = `
     <h2>${building.address}</h2>
+    <div class="bldContain">
+    <img src=${building.image} />
+    <div class="aptContain"></div>
+    </div>
   
   `;
 
@@ -16,13 +20,13 @@ const buildingList = buildingDataArray.map((building) => {
     apartmentArticle.setAttribute("id", apartment.id);
 
     apartmentArticle.innerHTML = `
-        <h3>${apartment.id}</h3>
+        <h3>Apartment ${apartment.id}</h3>
         <ul>
-            <li>${apartment.bedrooms}</li>
-            <li>${apartment.bathrooms}</li>
-            <li>${apartment.squareFeet}</li>
-            <li>${apartment.price}</li>
-            <li>${apartment.available}</li>
+            <li>${apartment.bedrooms} Bedrooms</li>
+            <li>${apartment.bathrooms} Bathroom</li>
+            <li>${apartment.squareFeet} SqFt</li>
+            <li>$${apartment.price}</li>
+            <li>Available: ${apartment.available ? "Yes" : "No"}</li>
             
 
         </ul>
@@ -35,7 +39,8 @@ const buildingList = buildingDataArray.map((building) => {
   });
 
   apartmentList.forEach((apartment) => {
-    buildingArticle.append(apartment);
+    // buildingArticle.append(apartment);
+    buildingArticle.querySelector(".aptContain").append(apartment);
   });
 
   return buildingArticle;

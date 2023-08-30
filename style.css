@@ -12,6 +12,29 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
+  /* float: inline-start; */
+}
+
+figure,
+img {
+  height: 250px;
+  width: 200px;
+  /* margin-top: px; */
+  display: inline-flex;
+  clear: both;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navlist li {
+  padding: 20px;
+}
+
+.navigation {
+  text-align: center;
 }
 
 .siteheader {
@@ -72,16 +95,48 @@ div {
 }
 
 .maincontent {
-  border: 5px dotted green;
+  /* border: 5px dotted green; */
 }
 
 .building {
-  border: 5px dotted orange;
+  /* border: 5px dotted orange; */
   margin: 10px;
   /* display: flex; */
 }
 
+.building h2 {
+  background: navy;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.building img {
+  height: 650px;
+  width: 450px;
+  margin-top: 60px;
+}
+
 .apartment {
-  border: 5px dotted blue;
+  /* border: 5px dotted lightblue; */
   margin: 5px;
+  background: navy;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.aptContain {
+  /* display: flex; */
+  /* border: 5px dotted blue; */
+}
+
+.bldContain {
+  display: flex;
+  /* border: 5px dotted orangered; */
+  padding-left: 100px;
+}
+
+.aptContain ul {
+  list-style-type: none;
 }
